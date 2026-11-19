@@ -1,0 +1,142 @@
+/*general settings*/
+body{
+    margin: 0;
+    padding: 0 2.5%;
+}
+html{
+    background-color: #000000;
+    scroll-behavior: smooth;
+}
+.main-grid-container{
+    background-color: #1E1E1E;
+}
+
+/*font*/
+@font-face {
+    font-family: Cormorant_Unicase;
+    src: url(../fonts/CormorantUnicase.ttf);
+}
+@font-face {
+    font-family: DMSans;
+    src: url(../fonts/DMSans.ttf);
+}
+
+
+/*header*/
+header{
+    background-color: #000000;
+}
+header h2{
+    font-family: Cormorant_Unicase;
+    font-size: 32px;
+    font-weight: normal;
+    color: #731F32;
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: -15px;
+}
+header h1{
+    font-family: Cormorant_Unicase;
+    font-size: 76px;
+    font-weight: normal;
+    color: #F2EEE8;
+    text-align: center;
+    margin: 0;
+}
+
+/*000, 001, general*/
+.zero-grid-container p, .one-grid-container p, .two-grid-container p, .three-grid-container p, .four-grid-container p, .five-grid-container p{
+    font-family: DMSans;
+    font-size: 24px;
+    font-weight: normal;
+    color: #D6D1CE;
+    b{
+        color: #731F32;
+    }
+}
+.zero-grid-container h1, .one-grid-container h1, .two-grid-container h1, .three-grid-container h1, .four-grid-container h1, .five-grid-container h1{
+    font-family: DMSans;
+    font-size: 48px;
+    font-weight: normal;
+    color: #F2EEE8;
+}
+.zero-grid-container h2, .one-grid-container h2{
+    font-family: DMSans;
+    font-size: 40px;
+    font-weight: normal;
+    color: #F2EEE8;
+}
+.zero-grid-container h3, .one-grid-container, .two-grid-container h3, .three-grid-container h3, .four-grid-container h3, .five-grid-container h3{
+    font-family: Cormorant_Unicase;
+    font-size: 24px;
+    font-weight: normal;
+    color: #A66D7D;
+}
+
+/*001 achievements*/
+.one-achievement .achieve h3{
+    font-family: DMSans;
+    font-size: 40px;
+    font-weight: normal;
+    color: #A66D7D;
+}
+.one-achievement .achieve p:first-of-type{
+    font-family: DMSans;
+    font-size: 32px;
+    font-weight: normal;
+    color: #F2EEE8;
+    width: 100%;
+    letter-spacing: 12px;
+    text-align: justify;
+    text-align-last: justify;
+}
+.one-achievement .achieve p:last-of-type{
+    font-family: DMSans;
+    font-size: 24px;
+    font-weight: normal;
+    color: #A9A3A5;
+    letter-spacing: 1px;
+}
+
+/*002 003 flexbox title*/
+.two-grid-container h4, .three-grid-container h4{
+    font-family: DMSans;
+    font-size: 40px;
+    font-weight: normal;
+    color: #F2EEE8;
+}
+
+/*005*/
+.five-grid-container h5{
+    font-family: DMSans;
+    font-size: 32px;
+    font-weight: normal;
+    color: #F2EEE8;
+}
+.five-grid-container h6{
+    font-family: DMSans;
+    font-size: 20px;
+    font-weight: normal;
+    color: #A9A3A5;
+}
+.back{
+    font-family: Cormorant_Unicase;
+    font-size: 24px;
+    font-weight: normal;
+    color: #F2EEE8;
+    text-decoration: none;
+}
+.back:hover{
+    color: #A66D7D;
+    text-decoration: none;
+}
+
+/*footer*/
+footer{
+    font-family: Cormorant_Unicase;
+    font-size: 24px;
+    font-weight: normal;
+    color: #F2EEE8;
+    background-color: #000000;
+}

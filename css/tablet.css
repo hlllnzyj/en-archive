@@ -1,0 +1,265 @@
+/*000*/
+/* *{
+    border: 1px red solid;
+} */
+
+.zero-grid-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    a{
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: center;
+        margin-bottom: 30px;
+        img{
+            max-width: 90%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .zero-p{
+        grid-row: 4
+    }
+    h2{
+        grid-row: 5;
+    }
+    p:last-of-type{
+        grid-row: 6;
+    }
+}
+
+/*001*/
+.one-grid-container{
+
+    width: 100%;
+    min-width: 0;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    .image-title{
+        margin: 10px 0 0 10px;
+    }
+    a:nth-of-type(2) img{
+        width: 100%;
+        height: auto;
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .one-p{
+        display: contents
+    }
+    .one-p p:first-of-type{
+        grid-column: 2;
+        grid-row: 5;
+        margin-top: 10px;
+    }
+    .one-p p:nth-of-type(2){
+        grid-column: 1/-1;
+        grid-row: 7;
+        margin: 20px 10px;
+    }
+    .one-enlogo{
+        transform: translate(-10px, -10px);
+        justify-self: start;
+        align-self: start;
+    }
+}
+
+/*001 achievements*/
+.one-achievement{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: 0;
+    margin-bottom: 30px;
+    
+    .achieve{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content min-content min-content;
+        align-content: center;
+        padding-bottom: 0;
+
+    }
+    .achieve a{
+        grid-column: 1;
+        grid-row: 1/4;
+        margin: 7px;
+    }
+    .achieve h3{
+        grid-column:2 ;
+        grid-row: 1;
+        margin: 0;
+        margin-left: 10px;
+        align-self: end;
+        text-align: right;
+        line-height: 2;
+        margin-right: 10px;
+        
+    }
+    .achieve p:first-of-type{
+        grid-column: 2;
+        grid-row: 2;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: right;
+        text-align-last: auto;
+        letter-spacing: 3px;
+        width: auto;
+        min-width: 0;
+        
+    }
+    .achieve p:last-of-type{
+        grid-column: 2;
+        grid-row: 3;
+        text-align: right;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .achieve:nth-child(2) a{
+        grid-column: 2;
+    }
+    .achieve:nth-child(2) h3, .achieve:nth-child(2) p:first-of-type, .achieve:nth-child(2) p:last-of-type{
+        grid-column: 1;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .achieve img {
+    display: block;
+    width: 100%;
+    height: auto;
+    }
+}
+
+/*002*/
+
+/*un-overlap*/
+.two-identity > div + div {
+    margin-top: 0;
+}
+.identity-text{
+    height: auto;
+    margin-bottom: 80px;
+}
+.two-grid-container{
+    display: grid;
+}
+.two-grid-container a:first-of-type img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.identity-visual{
+    flex: 0 1 45%;
+    min-width: 0;
+}
+.identity-visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*003*/
+.three-grid-container{
+    .timeline-row p{
+        transform: translateY(0);
+    }
+    .timeline-heading h4{
+        margin-top: 10px;
+    }
+} 
+
+/*005*/
+
+.five-grid-container {
+    width: 100%;
+    min-width: 0;
+    grid-template-rows: auto auto auto auto auto;
+    .image-title{
+        margin: 0 0 5px 10px;
+    }
+    h1{
+        margin-top: 10px;
+    }
+    h5{
+        font-size: 16px;
+    }
+    h6{
+        font-size: 12px;
+    }
+    /*icons to rows*/
+    .five-icons{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 20px;
+        row-gap: 15px;
+    }
+    .social-icons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .icon-text{
+        flex: 1;
+    }
+    .social-icons a {
+        flex: 0 0 auto;
+        margin: 0;
+        margin-left: auto;
+    }
+    .back{
+        margin-bottom: 30px;
+    }
+
+}
+
+/*eras settings*/
+
+.eras_intro{
+        h1{
+            margin-bottom: 0;
+        }
+}
+.eras_album {
+        grid-template-columns: 1fr;
+        margin-left: 10px;
+        margin-right: 10px;
+        img{
+            display: block;
+        }
+        a{
+            justify-self: center;
+        }
+}
+.eras_mv {
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-template-columns: 1fr;
+    img{
+        display: block;
+        width: 70%;
+        height: auto;
+        justify-self: center;
+    }
+}
+
+
+/*soundtrack settings*/
+
+.soundtrack{
+    p{
+        font-family: DMSans;
+        font-size: 16px;
+        font-weight: normal;
+        color: #D6D1CE;
+        b{
+            color: #731F32;
+            font-family: Cormorant_Unicase;
+        }
+    }
+    .cover a{
+        font-size: 10px
+    }
+}
