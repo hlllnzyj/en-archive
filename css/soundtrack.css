@@ -240,9 +240,11 @@ p{
             /*when tabs it*/
             color: #A66D7D;
         }
-        a:hover{
-            /*when mouse is over link*/
+        @media (hover: hover) and (pointer: fine) {
+            a:hover {
             color: #A66D7D;
+            text-decoration: none;
+            }
         }
         a:active{
             /*while clicking*/
@@ -259,9 +261,11 @@ p{
     color: #F2EEE8;
     text-decoration: none;
 }
-.back:hover{
-    color: #A66D7D;
-    text-decoration: none;
+@media (hover: hover) and (pointer: fine) {
+    .back:hover {
+        color: #A66D7D;
+        text-decoration: none;
+    }
 }
 .back{
         display: block;
