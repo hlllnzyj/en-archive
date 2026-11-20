@@ -234,8 +234,9 @@
         a{
             justify-self: center;
         }
-        .back:focus{
-            color:#F2EEE8;
+        .back:visited{
+            color: #F2EEE8;
+            text-decoration: none;
         }
 }
 .eras_mv {
@@ -273,12 +274,13 @@
         font-size: 10px
     }
     .playlist_links{
-        a:focus-visible{
-            /*when tabs it*/
+        a:visited{
             color: #F2EEE8;
+            text-decoration: none;
         }
     }
-    .back:focus{
+    .back:visited{
         color: #F2EEE8;
+        text-decoration: none;
     }
 }

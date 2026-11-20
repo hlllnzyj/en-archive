@@ -334,6 +334,10 @@ header h1{
     .back{
         margin-bottom: 30px;
     }
+    .back:visited{
+        color: #F2EEE8;
+        text-decoration: none;
+    }
 
 }
 
@@ -457,8 +461,9 @@ footer{
         margin-right: auto;
         text-align: center;
     }
-    .back:focus{
-        color:#F2EEE8;
+    .back:visited{
+        color: #F2EEE8;
+        text-decoration: none;
     }
 }
 
@@ -582,13 +587,15 @@ footer{
         }
     }
     .playlist_links{
-        a:focus-visible{
+        a:visited{
             /*when tabs it*/
             color: #F2EEE8;
+            text-decoration: none;
         }
     }
-    .back:focus{
+    .back:visited{
         color: #F2EEE8;
+        text-decoration: none;
     }
 }
 /* *{
