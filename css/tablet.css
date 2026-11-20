@@ -235,18 +235,23 @@
             justify-self: center;
         }
         .back:focus{
-            color:#731F32;
+            color:#F2EEE8;
         }
 }
 .eras_mv {
     margin-left: 10px;
     margin-right: 10px;
     grid-template-columns: 1fr;
+    a{
+        justify-self: center;
+    }
     img{
         display: block;
         width: 70%;
         height: auto;
         justify-self: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -267,12 +272,13 @@
     .cover a{
         font-size: 10px
     }
-    .back:focus{
-        color:#731F32;
-    }
     .playlist_links{
-        a:focus{
-            color:#731F32;
+        a:focus-visible{
+            /*when tabs it*/
+            color: #F2EEE8;
         }
+    }
+    .back:focus{
+        color: #F2EEE8;
     }
 }

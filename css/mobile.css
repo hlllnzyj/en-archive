@@ -458,7 +458,7 @@ footer{
         text-align: center;
     }
     .back:focus{
-        color: #731F32;
+        color:#F2EEE8;
     }
 }
 
@@ -581,8 +581,14 @@ footer{
 
         }
     }
+    .playlist_links{
+        a:focus-visible{
+            /*when tabs it*/
+            color: #F2EEE8;
+        }
+    }
     .back:focus{
-        color:#731F32;
+        color: #F2EEE8;
     }
 }
 /* *{
