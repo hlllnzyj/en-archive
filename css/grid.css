@@ -146,7 +146,7 @@ header, nav, .head-img, .zero-grid-container, .one-grid-container, .one-achievem
 
 .one-achievement{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     padding-left: 10px;
     padding-right: 10px;
     column-gap: 10px

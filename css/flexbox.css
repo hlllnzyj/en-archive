@@ -63,11 +63,22 @@
 .achieve{
     display: flex;
     flex-direction: column;
+    min-width: 0;
     h3, p, a{
         margin: 0;
     }
     padding-bottom: 30px;
-
+    a{
+        display: block;
+        width: 100%;
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1.5;
+            object-fit: cover;
+        }
+    }
 }
 
 /*002*/
@@ -119,6 +130,14 @@
 /*overlap*/
 .two-identity > div + div {
     margin-top: -60px;
+}
+@media (min-width: 981px) and (max-width: 996px) {
+    .two-identity > div + div {
+        margin-top: -10px;
+    }
+    .two-identity{
+        padding-bottom: 40px;
+    }
 }
 
 /*003*/
