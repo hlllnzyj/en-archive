@@ -228,9 +228,14 @@
         margin-right: 10px;
         img{
             display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         a{
             justify-self: center;
+        }
+        .back:focus{
+            color:#731F32;
         }
 }
 .eras_mv {
@@ -261,5 +266,13 @@
     }
     .cover a{
         font-size: 10px
+    }
+    .back:focus{
+        color:#731F32;
+    }
+    .playlist_links{
+        a:focus{
+            color:#731F32;
+        }
     }
 }

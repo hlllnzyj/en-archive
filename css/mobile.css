@@ -424,11 +424,15 @@ footer{
     margin-left: 10px;
     margin-right: 10px;
     grid-template-columns: 1fr;
+    a{
+        justify-self: center;
+    }
     img{
         display: block;
         width: 70%;
         height: auto;
-        justify-self: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 .eras_stage{
@@ -447,7 +451,16 @@ footer{
         width: 70%;
     }
 }
-
+.eras{
+    .back{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .back:focus{
+        color: #731F32;
+    }
+}
 
 /*soundtrack settings*/
 
@@ -557,6 +570,9 @@ footer{
             height: auto;
             margin-bottom: 10px;
             margin-top: 10px;
+            a:focus{
+                color: #731F32;
+            }
         }
         .tracks{
             position: relative;
@@ -564,6 +580,9 @@ footer{
             margin: 0 auto;
 
         }
+    }
+    .back:focus{
+        color:#731F32;
     }
 }
 /* *{
