@@ -461,9 +461,11 @@ footer{
         margin-right: auto;
         text-align: center;
     }
-    .back:visited{
+    .back:hover{
         color: #F2EEE8;
-        text-decoration: none;
+    }
+    .back:active{
+        color:#731F32;
     }
 }
 
@@ -586,16 +588,12 @@ footer{
 
         }
     }
-    .playlist_links{
-        a:visited{
-            /*when tabs it*/
-            color: #F2EEE8;
-            text-decoration: none;
-        }
-    }
-    .back:visited{
+    .back:hover, .playlist_links a:hover {
         color: #F2EEE8;
-        text-decoration: none;
+    }
+
+    .back:active, .playlist_links a:active {
+        color: #731F32;
     }
 }
 /* *{

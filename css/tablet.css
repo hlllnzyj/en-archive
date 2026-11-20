@@ -234,9 +234,11 @@
         a{
             justify-self: center;
         }
-        .back:visited{
+        .back:hover{
             color: #F2EEE8;
-            text-decoration: none;
+        }
+        .back:active{
+            color:#731F32;
         }
 }
 .eras_mv {
@@ -273,14 +275,11 @@
     .cover a{
         font-size: 10px
     }
-    .playlist_links{
-        a:visited{
-            color: #F2EEE8;
-            text-decoration: none;
-        }
-    }
-    .back:visited{
+    .back:hover, .playlist_links a:hover {
         color: #F2EEE8;
-        text-decoration: none;
+    }
+
+    .back:active, .playlist_links a:active {
+        color: #731F32;
     }
 }
